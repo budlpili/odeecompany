@@ -1296,7 +1296,7 @@ section.join-us-form{
     border-style: solid;
     border-color: #cccccc;
     border-width: 0px 0px 1px 0px;
-    padding: 16px;
+    padding: 8px;
     display: flex;
     flex-direction: row;
     width:40%;
@@ -1317,7 +1317,7 @@ section.join-us-form{
     display: flex;
     flex-direction: row;
     gap: 10px;
-	width:60o%;
+	width:60%;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -1421,7 +1421,7 @@ section.join-us-form{
     display: flex;
     flex-direction: row;
     gap: 6px;
-	height: 100%;
+	line-height: 26px;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
