@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html  lang="kr">
+
+<head>
+    <!--  *****   Link To Custom CSS Style Sheet   *****  -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/media.css">
+
+    <!--  *****   Link To Font Awsome Icons   *****  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>인증업체오드통신</title>
+</head>
+
+<body>
+    <aside>
+        <!-- ***  Asidebar right Starts  *** -->
+        <div id="floatdiv">
+            <div class="side-right">
+                <div class="container-top">
+                    <div class="logo-container">
+                        <div class="logo">
+                            <img src="./images/logo_3.svg">
+                            
+
+                            <!-- <svg class="logo-kt" width="65" height="18" viewBox="0 0 65 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_17_109)">
+                                    <path
+                                        d="M8.29094 9.36133C8.29094 9.36133 8.40734 9.76499 7.05304 9.76499H1.78214C1.78214 9.76499 0 9.76499 0 11.3114V16.2518C0 16.2518 0 18 1.31812 18H6.51982C6.51982 18 7.76716 17.5963 7.76716 16.3868V11.8827H5.95042V15.6047C5.95042 15.6047 6.11086 16.3363 5.25518 16.3363H2.31536C2.31536 16.3363 1.72708 16.4373 1.72708 15.857V12.0504C1.72708 12.0504 1.83404 11.5355 2.28862 11.528H7.89928C7.89928 11.528 8.3806 11.5458 8.3806 10.8409V9.36133H8.29094Z"
+                                        fill="white" />
+                                    <path
+                                        d="M10.8769 6.67236V16.3869C10.8769 16.3869 10.8659 18.0001 12.1855 18.0001H14.6786C14.6786 18.0001 15.1773 17.865 15.1773 17.2937V16.0501L15.1191 16.053C15.1191 16.053 15.1773 16.286 14.6613 16.286H12.8179C12.8179 16.286 12.497 16.3869 12.4702 15.5796L12.5237 6.67236H10.8769Z"
+                                        fill="white" />
+                                    <path
+                                        d="M16.434 6.67236V16.3869C16.434 16.3869 16.423 18.0001 17.7411 18.0001H20.2358C20.2358 18.0001 20.7344 17.865 20.7344 17.2937V16.0501L20.6762 16.053C20.6762 16.053 20.7344 16.286 20.2185 16.286H18.375C18.375 16.286 18.0541 16.3869 18.0274 15.5796L18.0809 6.67236H16.434Z"
+                                        fill="white" />
+                                    <path
+                                        d="M57.5899 1.12646L57.5899 8.71882L57.5899 15.5974C57.5899 15.5974 57.571 18.0001 59.8078 18.0001H64.0374C64.0374 18.0001 64.8836 17.7997 64.8836 16.9494V15.0973C64.8836 15.0973 64.8836 15.4475 64.0075 15.4475H60.8805C60.8805 15.4475 60.3363 15.5974 60.2906 14.3968L60.3363 8.71882L60.3819 1.12795H57.5899V1.12646Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M24.0832 9.83187H28.7155V9.83483C30.4976 9.83483 30.3545 12.3384 30.3545 12.3384C30.3545 14.2365 28.9656 14.7411 28.9656 14.7411L24.5488 14.707C23.8001 14.707 24.014 14.9414 24.014 14.9414V15.7146C24.014 16.286 24.4764 16.3528 24.4764 16.3528H29.8197C30.0321 16.3528 30.0242 16.1509 30.0242 16.1509H30.1044V17.1586C30.1044 17.8309 29.6058 17.9986 29.6058 17.9986H23.7639C22.4804 17.9986 22.3026 16.2845 22.3026 16.2845V11.1423C22.3026 9.79773 24.0832 9.83187 24.0832 9.83187ZM28.2153 11.5281H24.511L24.5095 11.5266C24.1524 11.7106 24.1178 12.2924 24.1178 12.2924C23.9747 12.6708 24.1178 13.0582 24.1178 13.0582H28.2153C28.6793 13.0582 28.7501 12.3354 28.7501 12.3354C28.7501 11.7478 28.2153 11.5281 28.2153 11.5281Z"
+                                        fill="white" />
+                                    <path
+                                        d="M34.2727 7.54647C34.2727 7.54647 34.4143 6.67236 34.8075 6.67236H33.0442C33.0442 6.67236 32.5802 6.73915 32.5802 7.47968V18.0001H34.246V11.5282H38.0132C38.0132 11.5282 38.5212 11.5029 38.5212 12.2939V18.0001H40.2043V11.5282C40.2043 11.5282 40.3788 9.94023 38.5495 9.89868C38.5747 9.89868 38.5244 9.89868 38.5495 9.89868L34.2853 9.90759L34.2727 7.54647Z"
+                                        fill="white" />
+                                    <path
+                                        d="M47.1362 0H44.1429C44.1429 0 43.2353 0.504576 43.2353 1.31041C43.2353 2.11625 43.2353 1.51224 43.2353 1.51224V18H46.1216C46.1216 18 46.5495 17.9332 46.5495 17.4286V12.6559C46.5495 12.6559 46.6564 12.3532 46.9065 12.5892L51.8943 18.0015H55.9918L49.936 11.2446L52.2875 8.38783L48.0485 8.39673L46.9521 9.78283C46.9521 9.78283 46.5778 10.0856 46.5778 9.42963L46.6218 1.39649C46.6218 1.39649 47.1598 0.277517 47.3485 0.129112C47.3485 0.129112 47.3344 0.00148405 47.1377 0.00148405L47.1362 0Z"
+                                        fill="white" />
+                                    <path
+                                        d="M47.7386 8.99915C47.7386 8.99915 47.5247 8.41889 50.1971 8.41889H63.2902C63.2902 8.41889 65 8.01523 65 6.9571V4.53662C65 4.53662 64.7326 5.09165 63.7715 5.09165L51.391 5.15844C51.391 5.15844 51.1771 5.09165 50.4283 5.79658C50.4283 5.79658 47.5782 8.43521 47.7386 8.99766V8.99915Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_17_109">
+                                        <rect width="65" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+        
+                            <div class="logo-lg">
+                                <svg class="logo-lg2" width="50" height="16" viewBox="0 0 50 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M27.0058 3.50928H30.0079V11.8358C30.0079 13.0575 31.3407 13.3898 32.2855 13.3898C33.5276 13.3898 34.4824 12.4751 34.4824 11.9209V3.50928H37.6775V11.8919C37.6775 12.7794 36.7881 15.9999 32.2855 15.9999C27.7829 15.9999 27.0639 12.5585 27.0639 12.0033C27.0639 11.4481 27.0058 3.51018 27.0058 3.51018V3.50928Z"
+                                        fill="white" />
+                                    <path d="M45.9738 0H43.3661V9.52827H45.9738V0Z" fill="white" />
+                                    <path d="M49.44 3.46216H39.9007V6.06769H49.44V3.46216Z" fill="white" />
+                                    <path
+                                        d="M0.0400085 15.6649H8.80043V13.0268H3.51262H3.25422V12.7651V3.56372H0.0400085V15.6649Z"
+                                        fill="white" />
+                                    <path
+                                        d="M19.3797 4.41496C18.3769 3.63702 17.0803 3.24487 15.5389 3.24487C13.7083 3.24487 12.1788 3.80637 11.1116 4.86779C10.0063 5.97629 9.41245 7.61007 9.41245 9.59615C9.41245 11.7154 10.0335 13.5031 11.1642 14.6315C12.05 15.5172 13.2341 15.9864 14.5806 15.9864C17.5463 15.9864 18.2327 14.2113 18.2327 14.2113V15.6658H20.9102V8.82907H15.5797V10.97H18.0296C18.0296 10.97 18.055 13.6616 15.5172 13.6616C14.8798 13.6616 14.304 13.427 13.8652 12.986C13.1806 12.3058 12.8143 11.1457 12.8143 9.64686C12.8143 7.16721 13.8008 5.68377 15.4582 5.68377C16.4855 5.68377 17.2662 6.31953 17.4638 7.27861H20.8748C20.6989 5.88392 20.3181 5.15487 19.3788 4.41678L19.3797 4.41496Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div class="logo-sk">
+                                <svg class="group-15" width="49" height="18" viewBox="0 0 49 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M47.5335 13.4641C46.5744 13.4641 46.0828 14.085 46.0022 14.1782C45.7624 13.729 45.3168 13.4641 44.7332 13.4641C43.8887 13.4641 43.4092 13.9458 43.33 14.0221C43.2946 13.894 43.1226 13.5425 42.5775 13.5425C42.4192 13.5425 42.19 13.5921 42.1703 13.5973C42.1922 13.6979 42.2955 14.1871 42.2955 14.8619V17.8404H43.4054V14.8064C43.4273 14.7865 43.842 14.3743 44.3426 14.3743C44.8433 14.3743 45.0898 14.7398 45.0898 15.2401V17.8411H46.2027V14.8057C46.2261 14.7842 46.634 14.3743 47.1407 14.3743C47.6474 14.3743 47.8796 14.7398 47.8796 15.2401V17.8411H49.0001V15.0714C49.0001 14.0983 48.4361 13.4656 47.5335 13.4656V13.4641Z"
+                                        fill="white" />
+                                    <path
+                                        d="M35.3565 17.054C34.604 17.054 34.0641 16.4687 34.0641 15.7043C34.0641 14.8526 34.6779 14.3464 35.3565 14.3464C35.7244 14.3464 35.8797 14.4552 36.121 14.4552C36.3819 14.4552 36.5199 14.3331 36.6488 14.0874C36.7197 13.952 36.7612 13.8736 36.7612 13.8736C36.7046 13.8395 36.1421 13.4651 35.1891 13.4651C33.7904 13.4651 32.9542 14.4478 32.9542 15.7043C32.9542 17.0755 33.9095 17.9368 35.1891 17.9368C36.1172 17.9368 36.679 17.5653 36.777 17.495L36.394 16.7484C36.308 16.8031 35.9122 17.054 35.3572 17.054H35.3565Z"
+                                        fill="white" />
+                                    <path
+                                        d="M23.181 13.4651C22.1178 13.4651 21.2191 14.3146 21.2191 15.7043C21.2191 17.094 22.0899 17.9368 23.3913 17.9368C24.425 17.9368 24.9619 17.4921 25.0252 17.4514C25.0252 17.4514 24.9249 17.2908 24.897 17.2449C24.7515 17.0118 24.5872 16.9371 24.4039 16.9371C24.0367 16.9371 23.99 17.0858 23.4954 17.0858C22.6434 17.0858 22.3493 16.4354 22.3289 16.001H25.1775V15.6776C25.1775 14.3442 24.3949 13.4658 23.1817 13.4658L23.181 13.4651ZM22.3229 15.227C22.3229 14.7386 22.6735 14.2842 23.1636 14.2842C23.7125 14.2842 24.0156 14.7519 24.0232 15.227H22.3229Z"
+                                        fill="white" />
+                                    <path
+                                        d="M27.0768 16.6352V12.1776C27.0768 11.6737 26.7345 11.2844 26.2045 11.2844H25.9662V17.0733C25.9662 17.6053 26.3025 17.9369 26.8876 17.9369C27.6084 17.9369 27.8233 17.4329 27.8233 16.9593C27.7954 16.9749 27.6408 17.0363 27.4862 17.0363C27.2299 17.0363 27.0776 16.8898 27.0776 16.6352H27.0768Z"
+                                        fill="white" />
+                                    <path
+                                        d="M19.6507 16.4835V14.365H20.5789L20.9016 13.5443H19.6514V12.2627C19.6514 12.2627 19.5519 12.2627 19.5466 12.2627C19.0535 12.2627 18.5393 12.4677 18.5393 13.534V13.5443H17.7182V14.3642H18.5393V16.8617C18.5393 17.5676 18.9661 17.9361 19.57 17.9361C20.0601 17.9361 20.6897 17.7904 20.6897 16.8395C20.6512 16.8632 20.4145 17.0134 20.1559 17.0134C19.7932 17.0134 19.6514 16.7958 19.6514 16.4835H19.6507Z"
+                                        fill="white" />
+                                    <path
+                                        d="M30.1509 13.4651C29.0862 13.4651 28.189 14.3146 28.189 15.7043C28.189 17.094 29.0583 17.9368 30.3605 17.9368C31.3942 17.9368 31.9288 17.4921 31.9951 17.4514C31.9951 17.4514 31.8933 17.2908 31.8639 17.2449C31.7192 17.0118 31.5556 16.9371 31.3716 16.9371C31.0066 16.9371 30.9584 17.0858 30.463 17.0858C29.6125 17.0858 29.3185 16.4354 29.2973 16.001H32.1459V15.6776C32.1459 14.3442 31.3625 13.4658 30.1509 13.4658V13.4651ZM29.2943 15.227C29.2943 14.7386 29.6427 14.2842 30.1328 14.2842C30.6809 14.2842 30.984 14.7519 30.9923 15.227H29.2951H29.2943Z"
+                                        fill="white" />
+                                    <path
+                                        d="M39.3247 17.9358C37.9645 17.9358 37.1457 17.0552 37.1457 15.7011C37.1457 14.3469 37.9532 13.4641 39.3247 13.4641C40.6963 13.4641 41.5038 14.3536 41.5038 15.7011C41.5038 16.9761 40.7573 17.9358 39.3247 17.9358ZM39.3247 17.0967C40.0048 17.0967 40.3977 16.5217 40.3977 15.7011C40.3977 14.8804 40.0139 14.3018 39.3247 14.3018C38.6356 14.3018 38.2503 14.8708 38.2503 15.7011C38.2503 16.5313 38.6333 17.0967 39.3247 17.0967Z"
+                                        fill="white" />
+                                    <path
+                                        d="M3.54755 13.076C2.87499 12.7667 2.32759 12.5181 2.32759 12.0164C2.32759 11.6323 2.6405 11.3526 3.25953 11.3526C3.48799 11.3526 3.67347 11.3792 3.86574 11.4125C3.96602 11.431 4.07309 11.4436 4.16357 11.4436C4.70418 11.4436 5.00804 11.1284 5.21162 10.5275L5.29607 10.2811C5.20861 10.2471 4.32492 9.86597 3.17282 9.86597C1.33985 9.86597 0.372474 11.0196 0.372474 12.2169C0.372474 12.8207 0.565498 13.258 0.867851 13.6029C1.25691 14.0461 1.81035 14.3362 2.3291 14.5841C3.08309 14.9474 3.7647 15.2153 3.7647 15.7555C3.76697 16.2335 3.26254 16.5058 2.58922 16.5058C1.66633 16.5058 0.860309 15.9886 0.757766 15.9257L0 17.3183C0.134965 17.3923 1.11064 18.0006 2.71514 18.0006C4.42596 18.0006 5.72283 17.0371 5.72283 15.5557C5.72283 14.0742 4.52096 13.5363 3.54831 13.0745L3.54755 13.076Z"
+                                        fill="white" />
+                                    <path
+                                        d="M10.2393 13.7642L13.342 10.031H11.1305L8.65589 13.2529H8.6197V10.031H6.79654V17.9399H6.90587C7.69379 17.9399 8.63177 17.5825 8.63177 16.2912V14.4739H8.66947L11.1923 17.8415H13.5116L10.2393 13.7642Z"
+                                        fill="white" />
+                                    <path
+                                        d="M13.446 2.07129C12.8013 2.18969 11.8528 2.76169 11.8543 3.77325C11.8581 4.69156 12.6226 5.24655 12.6241 6.44976C12.6287 7.35475 12.1197 7.96376 11.5708 8.30119C11.791 8.28269 12.0368 8.26937 12.3037 8.26937C12.8639 8.26789 13.2024 8.31969 13.2251 8.32265L16.1023 4.85732C15.3031 3.68297 14.3696 2.77131 13.446 2.07203V2.07129Z"
+                                        fill="white" />
+                                    <path
+                                        d="M15.8625 11.4329C16.2259 10.8779 16.2704 9.9966 16.3021 9.09826C16.336 8.25912 16.5125 7.62866 17.6563 7.62422C17.9096 7.62422 18.1524 7.65826 18.5875 7.65678C20.2606 7.64938 21.3539 7.08403 22.0347 6.71404C20.6459 5.84456 18.6176 4.95659 16.103 4.85669C15.9387 5.3103 14.6644 8.78821 14.5687 9.06866C14.5822 9.08642 14.8054 9.3321 15.0852 9.81012C15.4961 10.468 15.7178 11.0244 15.8633 11.4322L15.8625 11.4329Z"
+                                        fill="white" />
+                                    <path
+                                        d="M9.78312 8.59118C9.63836 8.59266 9.56597 8.49794 9.54486 8.33293C9.52903 8.16939 8.80821 1.70566 8.70039 0.728141C8.6838 0.585325 8.64911 0.323372 8.64911 0.230134C8.64836 0.079178 8.74789 0 8.86626 0C9.20707 0 11.0664 0.426229 13.0374 1.78335C12.4689 1.94097 11.4427 2.52038 11.4464 3.7221C11.4495 4.78398 12.2261 5.36856 12.2298 6.43635C12.2366 8.17161 10.2039 8.59044 9.78312 8.59118Z"
+                                        fill="white" />
+                                    <path
+                                        d="M16.0278 11.8932C16.0594 11.9738 16.0888 12.0412 16.1175 12.0885C16.1642 12.164 16.2216 12.198 16.2954 12.198C16.3407 12.198 16.3972 12.1817 16.4591 12.1558C16.6106 12.0855 22.6215 9.34096 23.5278 8.92953C23.6582 8.86811 23.9078 8.75934 23.99 8.71124C24.0752 8.66388 24.1144 8.59506 24.1144 8.52402C24.1144 8.48332 24.1023 8.4441 24.0805 8.40784C23.9666 8.22729 23.3853 7.62198 22.4126 6.96118C21.6413 7.37779 20.4349 8.02231 18.6411 8.02971C18.2031 8.02971 18.1028 8.00085 17.8027 8.00159C16.928 8.00529 16.7101 8.37233 16.6777 9.12637C16.6717 9.2677 16.6687 9.45862 16.6611 9.66877C16.634 10.3422 16.5526 11.2701 16.0278 11.8917V11.8932Z"
+                                        fill="white" />
+                                </svg>
+                            </div> -->
+                        </div>
+                        <div class="div">온라인 공식가입센터</div>
+                    </div>
+                    <div class="span">
+                        <div class="div2">
+                            연락처를 남겨주시면
+                            <br />
+                            친절한 상담사가
+                            <br />
+                            바로 연락드리겠습니다.
+                        </div>
+                    </div>
+                </div>
+                <div class="container-middle">
+                    <div class="container-input">
+        
+                        <div class="item">
+                            <div class="span2">성&nbsp&nbsp&nbsp함</div>
+                            <input type="text" color="#f1f1f1" placeholder="성함을 입력해주세요.">
+                        </div>
+                        <div class="item">
+                            <div class="span2">연락처</div>
+                            <input type="text" placeholder="연락처를 입력해주세요.">
+                        </div>
+                        <div class="item">
+                            <div class="span2">통신사</div>
+                            <input type="text" placeholder="희망통신사를 선택해주세요.">
+                        </div>
+        
+                    </div>
+                    <div class="agree">
+                        <div class="ag">
+                            <input type="checkbox" name="checkbox" style="width:14px;height:14px;">
+                        </div>
+                        <div class="div3">개인정보 수집 및 이용에 동의합니다.</div>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="btn-side">
+                        <div class="div4">비밀지원금확인하기</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- *** Asidebar right Ends  *** -->
+
+
+        <!-- ***  Asidebar bottom Starts  *** -->
+        <div id="floatdiv-bottom">
+            
+                <div class="bottom-float">
+                    <div class="h5">
+                        고객님의 신규가입, 통신사이동, 추가 가입 문의를 위해 전문 상담사가 대기중입니다.
+                    </div>
+                    <div class="input-agree">
+                        <div class="input-total">
+                            <div class="input-name">
+                                <span>성  함</span>
+                                <input type="text" placeholder="성함입력">
+                            </div>
+                            <div class="input-phone">
+                                <span>전화번호</span>
+                                <input type="text" placeholder="숫자만입력">
+                            </div>
+                            <div class="btn-side">
+                                <div class="div2">비밀지원금확인하기</div>
+                            </div>
+                        </div>
+                        <div class="agree">
+                            <input type="checkbox" name="checkbox" style="width:16px;height:16px;">
+                            <div class="text">개인정보 수집 및 이용에 동의합니다.</div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+        <div id="floatdiv-bottom-668">
+            <div class="bottom-float-668">
+                <div class="content">
+                    지원금문의하기
+                </div>
+            </div>
+            
+        </div>
+
+
+    <!-- *** Asidebar bottom Ends  *** -->
+
+
+    </aside>
+    
+    <!--   *** Website Wrapper Starts ***   -->
+    <div class="website-wrapper">
+
+        <!--   *** Home Section Starts ***   -->
+        <section class="home" id="home">
+
+            <div class="home-overlay"></div>
+            <!--   === Main Navbar Starts ===   -->
+            <nav class="main-navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <!-- <img src="images/home/logo.png"> -->
+                        오드통신
+                    </a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#">KT올레</a></li>
+                    <li><a href="#">LG유플러스</a></li>
+                    <li><a href="#">SK텔레콤</a></li>
+                    <li><a href="./board01/board-list.html">자유게시판</a></li>
+
+                    <!-- <li><a href="#blog">신청서작성</a></li> -->
+                </ul>
+                <!-- <a href="#" class="join-us-btn-wrapper"> -->
+                    <a href="./loginout/log.html"><button class="log-in">로그인</button></a>
+                <div class="hamburger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <!--   === Main Navbar Ends ===   -->
+
+
+            <!--   === Banner Starts ===   -->
+            <div class="banner">
+                <div class="banner-contents">
+                    <h2>인터넷 + TV 신규가입 사은품지원</h2>
+                    <h1>최대사은금! 비밀지원금지급!</h1>
+                    <p>고객님께 단돈 1만원이라도 더! 지원해주도록 노력하겠습니다.</p>
+                    <!-- <button class="btn read-more-btn">Read More</button> -->
+                </div>
+            </div>
+            <!--   === Banner Ends ===   -->
+
+        </section>
+
+
+        <!--   *** Home Section Ends ***   -->
+
+        <!--   *** Facilities Section Starts ***   -->
+        <section class="facilities">
+            <div class="facilities-contents">
+
+                <div class="facility-item">
+                    <!-- <div class="facility-icon">
+				    <i class="fa-solid fa-dumbbell"></i>
+			        </div> -->
+                <div class="title">
+                <h5>자유게시판</h5><a href="./board01/board-list.html"><span><strong>더보기</strong></span></a>
+                </div>
+
+                <table class="table board-01">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>글쓴이</th>
+                        <th>날짜</th>
+                        <th>조회수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="번호">1</td>
+                        <td data-label="제목"><a href="./board01/board-view.html">비밀지원금이뭔가요?</a></td>
+                        <td data-label="이름">글쓴이</td>
+                        <td data-label="날짜">23.11.30</td>
+                        <td data-label="조회수">123</td>
+                    </tr>
+                    <tr>
+                        <td data-label="번호">1</td>
+                        <td data-label="제목">비밀지원금이뭔가요?</td>
+                        <td data-label="이름">글쓴이</td>
+                        <td data-label="날짜">23.11.30</td>
+                        <td data-label="조회수">123</td>
+                    </tr>
+                    <tr>
+                        <td data-label="번호">1</td>
+                        <td data-label="제목">비밀지원금이뭔가요?</td>
+                        <td data-label="이름">글쓴이</td>
+                        <td data-label="날짜">23.11.30</td>
+                        <td data-label="조회수">123</td>
+                    </tr>
+                    <tr>
+                        <td data-label="번호">1</td>
+                        <td data-label="제목">비밀지원금이뭔가요?</td>
+                        <td data-label="이름">글쓴이</td>
+                        <td data-label="날짜">23.11.30</td>
+                        <td data-label="조회수">123</td>
+                    </tr>
+                    <tr>
+                        <td data-label="번호">1</td>
+                        <td data-label="제목">비밀지원금이뭔가요?</td>
+                        <td data-label="이름">글쓴이</td>
+                        <td data-label="날짜">23.11.30</td>
+                        <td data-label="조회수">123</td>
+                    </tr>
+
+                </tbody>
+                </table>
+                    
+            </div>
+
+                <div class="facility-item">
+
+                    <div class="facility-desc">
+                        <div class="title">
+                            <h5>지원금상담현황</h5>
+                        </div>
+
+                        <table class="table board-02">
+                            <thead class="board-head-02">
+                                <tr>
+                                    <th>상태</th>
+                                    <th>구분</th>
+                                    <th>고객명</th>
+                                    <th>접수일</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="상태">접수완료</td>
+                                    <td data-label="구분">지원금문의</td>
+                                    <td data-label="고객명">김*인</td>
+                                    <td data-label="접수일">23.11.30</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="상태">접수완료</td>
+                                    <td data-label="구분">지원금문의</td>
+                                    <td data-label="고객명">김*인</td>
+                                    <td data-label="접수일">23.11.30</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="상태">접수완료</td>
+                                    <td data-label="구분">지원금문의</td>
+                                    <td data-label="고객명">김*인</td>
+                                    <td data-label="접수일">23.11.30</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="상태">접수완료</td>
+                                    <td data-label="구분">지원금문의</td>
+                                    <td data-label="고객명">김*인</td>
+                                    <td data-label="접수일">23.11.30</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="상태">접수완료</td>
+                                    <td data-label="구분">지원금문의</td>
+                                    <td data-label="고객명">김*인</td>
+                                    <td data-label="접수일">23.11.30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--   *** Facilities Section Ends ***   -->
+
+
+        <!--   *** Banner2 Section Starts ***   -->
+            <section class="banner2" id="banner2">
+
+                <div class="banner2-contents">
+                    상단 베너 슬라이드아닌 이미지로 들어갈시, 움직이는베너 만들예정?! 
+                </div>
+
+
+            </section>
+        <!--   *** Banner2 Section Ends ***   -->
+
+
+        <!--   *** Join us Form Section Starts ***   -->
+        <section class="join-us-form" id="join-us-form">
+
+            <!--   === Join us Form Header Starts ===   -->
+            <header class="section-header">
+		        <!-- <h3>상담신청서 작성하기</h3> -->
+		        <h3>오드통신 상담신청</h3>
+		        <p>친절한 상담사가 가입 및 상담을 쉽게 도와드리겠습니다.<br>
+                    (입력하신 정보는 보안을 입력하신 정보는 보안을 유지하며, 빠르고 안전하게 처리할 것을 약속드립니다.)</p>
+	        </header>
+            <!--   === Join us Form Header Ends ===   -->
+
+            <!--   === Join us Form Contents Starts ===   -->
+            <div class="form-contents">
+                <div class="form-total">
+                    <div class="content3">
+                        <div class="category">
+
+                            <div class="name">
+                                <div class="title4">
+                                    <div class="form-title">고객명</div>
+                                </div>
+                                
+                                    <div class="form-sub contents">
+                                        <input type="text" placeholder="성함을 입력해주세요">
+                                    </div>
+                                
+                            </div>
+
+                            <div class="name">
+                                <div class="title4">
+                                    <div class="form-title">연락처</div>
+                                </div>
+                                <div class="form-sub contents">
+                                    <input type="text" placeholder="연락처를 입력해주세요">
+                                </div>
+                            </div>
+
+                            <div class="name">
+                                <div class="title4">
+                                    <div class="form-title">가입희망통신사</div>
+                                </div>
+                                <div class="contents">
+                                    <div class="column">
+                                        <input type="radio" class="radio-m" name="radio1">
+                                        <div class="form-span">KT</div>
+                                    </div>
+                                    <div class="column">
+                                        <input type="radio" class="radio-m" name="radio1">
+                                        <div class="form-span">SK</div>
+                                    </div>
+                                    <div class="column last">
+                                        <input type="radio" class="radio-m" name="radio1">
+                                        <div class="form-span">LG</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="name">
+                                <div class="title4">
+                                    <div class="form-title">가입희망상품</div>
+                                </div>
+                                <div class="contents">
+                                    <div class="column">
+                                        <input type="radio" class="radio-m" name="radio2">
+                                        <div class="form-span">인터넷</div>
+                                    </div>
+                                    <div class="column">
+                                        <input type="radio" class="radio-m" name="radio2">
+                                        <div class="form-span">인터넷 + TV</div>
+                                    </div>
+                                    <div class="column">
+                                        <input type="radio" class="radio-m" name="radio2">
+                                        <div class="form-span">인터넷 + 전화</div>
+                                    </div>
+                                    <div class="column">
+                                        <input type="radio" class="radio-m" name="radio2">
+                                        <div class="form-span">인터넷 + TV + 전화</div>
+                                    </div>
+                                    <div class="column">
+                                        <input type="radio" class="radio-m" name="radio2">
+                                        <div class="form-span">TV만 신청</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="name">
+                                <div class="title4">
+                                    <div class="form-title">상담희망시간</div>
+                                </div>
+                                <div class="contents">
+                                    <div class="column">
+                                        <div class="form-sub">
+                                                <select class="time">
+                                                    <option>상담시간대를 입력해주세요.</option>
+                                                    <option>오전 9시 ~ 12시</option>
+                                                    <option>오후 12시 ~ 오후 1시</option>
+                                                    <option>오후 1시 ~ 오후 3시</option>
+                                                    <option>오후 3시 ~ 오후 6시</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="name">
+                                <div class="title4">
+                                    <div class="form-title">추가 상담</div>
+                                </div>
+                                <div class="contents">
+                                    <div class="column">
+                                        <input type="radio" class="radio-m" name="radio3">
+                                        <div class="form-span">휴대폰 결합</div>
+                                    </div>
+                                    <div class="column">
+                                        <input type="radio" class="radio-m" name="radio3">
+                                        <div class="form-span">와이파이(공유기)</div>
+                                    </div>
+                                    <div class="column">
+                                        <input type="radio" class="radio-m" name="radio3">
+                                        <div class="form-span">패밀리 결합</div>
+                                    </div>
+                                    <div class="column">
+                                        <input type="radio" class="radio-m" name="radio3">
+                                        <div class="form-span">그 외</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                            
+                        <div class="signup-notes">
+                            <div class="contents">
+                                <div class="text4">
+                                    <div class="div27">개인정보 수집 및 이용 (필수)</div>
+                                    <div class="div27-1">
+                                        ☞ 개인정보 수집목적 : 가입 상담 및 신청
+                                        <br />
+                                        ☞ 수집하는 개인정보 항목 : 고객명, 연락처
+                                        <br />
+                                        ☞ 개인정보 보유, 이용기간 : 상담 요청일로부터 30일까지 보관/이용 후 파기 <u>(설치완료회원은 설치일로부터 3년보관 후 파기)</u>
+                                        <br />
+                                        ※ 단, 관계법령의 규정에 의하여 보존할 필요가 있는 경우 관련 법령에 따라 보관할 수 있습니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="consent-status">
+                                <div class="text5">
+                                    <input type="checkbox" class="checkbox-m" name="checkbox">
+                                    <div class="form-span ag">개인정보 수집 및 이용에 동의합니다.</div>
+                                </div>
+                                <!-- <div class="agree">
+                                    <div class="frame-16">
+                                        <input type="radio" class="radio-m" name="radio" checked>
+                                        <div class="form-span">동의함</div>
+                                    </div>
+                                    <div class="frame-16">
+                                        <input type="radio" class="radio-m" name="radio">
+                                        <div class="form-span">동의안함</div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="send-container">
+                            <button class="send-btn">신청서 보내기</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <!--   === Join us Form Contents Ends ===   -->
+
+        </section>
+        <!--   *** Form Section Ends ***   -->
+
+
+
+        
+        <!--   *** Offer Section Starts ***   -->
+        <section class="offer" id="offer">
+
+            <h3>가입 절차 안내</h3>
+            <p>인터넷가입 현금 최다지급 / 추가 지원금 / 추가 결합할인</p>
+            <div class="offer-div">
+                <!-- <div class="offer-contents">
+                
+                    <div class="offer-item">
+                        <img src="./images/icon-gaip01.png">
+                    </div>
+                    <div class="offer-item">
+                        <img class="arrow" src="./images/btn-arrow.png">
+                    </div>
+                    <div class="offer-item">
+                        <img src="./images/icon-gaip02.png">
+                    </div>
+                    <div class="offer-item">
+                        <img class="arrow" src="./images/btn-arrow.png">
+                    </div>
+                    <div class="offer-item">
+                        <img src="./images/icon-gaip03.png">
+                    </div>
+                    <div class="offer-item">
+                        <img class="arrow" src="./images/btn-arrow.png">
+                    </div>
+                    <div class="offer-item">
+                        <img src="./images/icon-gaip04.png">
+                    </div>
+                    <div class="offer-item">
+                        <img class="arrow" src="./images/btn-arrow.png">
+                    </div>
+                    <div class="offer-item">
+                        <img src="./images/icon-gaip05.png">
+                    </div>
+                    
+                        
+                </div> -->
+            
+            <img src="./images/joinusrull.svg" class="joinrull">
+            </div>
+            
+
+        </section>
+        <!--   *** Offer Section Ends ***   -->
+
+
+
+
+
+
+
+
+
+        <!--   *** About Section Starts ***   -->
+        <section class="about" id="about">
+
+            <div class="about-contents">
+                <div class="about-item">
+                    <div class="about-desc">
+                        <h3>저희 오드통신은<br>공식적으로 인증 받은 영업점입니다.</h3>
+                        <p>고객님의 안전하고 믿을 수 있는 서비스를 제공하기 위해 더욱더 열심히 노력하겠습니다.</p>
+                    </div>
+                </div>
+                
+                <div class="about-item">
+                    <div class="about-desc">
+                        <img src="./images/sajeon(test).png">
+                        <span>타회사꺼임. 자료요청함</span>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="about-desc">
+                        <img src="./images/document02.png">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="about-item">
+                    <div class="about-desc">
+
+                    <img src="./images/document03.png">
+                    <span></span>
+                    </div>
+                    
+
+            </div>
+
+
+        </section>
+        <!--   *** About Section Ends ***   -->
+
+
+
+
+        <!--   *** Footer Section Starts ***   -->
+        <section class="page-footer">
+
+            <!--   === Footer Contents Starts ===   -->
+            <div class="footer-contents">
+
+                <div class="footer-col footer-col-1">
+
+                    <div class="footer-col-desc">
+                        <h5>[개인정보처리방침]&nbsp&nbsp|&nbsp&nbsp[온라인 사전승낙서]</h5>
+                        <span>오드통신 | 전라북도 군산시 대학로 342, 1동 13층 1309호(나운동,동아26빌딩) | 대표: 채희진</span>
+                        <span>사업자등록번호 439-12-02723 | 통신판매업신고번호 제2023 - 전북군산 - 0659호</span>
+                        <!-- <div class="footer-social-media">
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+				</div> -->
+                    </div>
+                </div>
+
+
+                <div class="footer-col footer-col-3">
+                    <div class="footer-col-desc">
+                        <div class="title">
+                            <img class="injeungmark-1" src="./images/injeungmark.png" alt="타회사꺼임.">
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+            <!--   === Footer Contents Ends ===   -->
+
+        </section>
+        <!--   *** Footer Section Ends ***   -->
+
+        <!--   *** Copy Rights Starts ***   -->
+        <div class="copy-rights">
+            <p>Copyright(C) 오드통신 All Rights Reserved</p>
+        </div>
+        <!--   *** Copy Rights Ends ***   -->
+    </div>
+    <!--   *** Website Wrapper Ends ***   -->
+
+    
+
+
+    
+
+
+
+    <!--   *** Link To Custom Script File ***   -->
+    <script type="text/javascript" src="../Hompage/script/script.js"></script>
+
+
+
+
+</body>
+
+</html>

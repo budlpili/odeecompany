@@ -1,0 +1,516 @@
+/* Landding4 CSS Styles */
+
+
+.ladding-5,
+.ladding-5 * {
+    box-sizing: border-box;
+}
+
+.ladding-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 968px;
+    position: relative;
+}
+
+.top-label {
+    background: #0b288c;
+    padding: 16px 48px 16px 48px;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.36);
+}
+
+.logo-kt {
+    flex-shrink: 0;
+    width: 123px;
+    height: 36px;
+    position: relative;
+    overflow: visible;
+}
+
+.logo-sk {
+    flex-shrink: 0;
+    width: 107px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.group-15 {
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+.group7 {
+    flex-shrink: 0;
+    width: 95px;
+    height: 32px;
+    position: relative;
+    overflow: visible;
+}
+
+.middle {
+    background: #4565d4;
+    padding: 70px 0px 70px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-239 {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-224 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+._3 {
+    color: #ffc901;
+    text-align: left;
+    font-family: "210Ssanai-Light", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    position: relative;
+}
+
+.group-16 {
+    flex-shrink: 0;
+    width: 714.28px;
+    height: 103.12px;
+    position: relative;
+    overflow: visible;
+}
+
+.tv {
+    color: #ffc901;
+    text-align: left;
+    font-family: "210Ssanai-Light", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    position: relative;
+}
+
+.frame-238 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.project-overview {
+    flex-shrink: 0;
+    width: 524px;
+    height: 175.97px;
+    position: static;
+}
+
+.overview {
+    background: #582500;
+    border-radius: 29px;
+    padding: 30px 50px 30px 50px;
+    width: 270.45px;
+    height: 97.99px;
+    position: absolute;
+    left: 248.57px;
+    top: 53.56px;
+    transform-origin: 0 0;
+    transform: rotate(5.272deg) scale(1, 1);
+}
+
+.overview2 {
+    background: #fc6b00;
+    border-radius: 29px;
+    padding: 30px 50px 30px 50px;
+    width: 270.45px;
+    height: 97.99px;
+    position: absolute;
+    left: 240.58px;
+    top: 45.56px;
+    transform-origin: 0 0;
+    transform: rotate(5.272deg) scale(1, 1);
+}
+
+.tv2 {
+    color: #ffffff;
+    text-align: center;
+    font-family: "210Ssanai-Bold", sans-serif;
+    font-size: 56px;
+    line-height: 70px;
+    font-weight: 700;
+    position: absolute;
+    left: 15.01px;
+    top: 14.7px;
+    width: 240px;
+    height: 67.5px;
+}
+
+.project {
+    background: #5b4800;
+    border-radius: 29px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    padding: 30px 50px 30px 50px;
+    width: 296.65px;
+    height: 99.68px;
+    position: absolute;
+    left: 7.99px;
+    top: 51.51px;
+    box-shadow: 15px 19px 26px 0px rgba(0, 0, 0, 0.1);
+    transform-origin: 0 0;
+    transform: rotate(-8.458deg) scale(1, 1);
+}
+
+.project2 {
+    background: #ffc901;
+    border-radius: 29px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    padding: 30px 50px 30px 50px;
+    width: 296.65px;
+    height: 99.68px;
+    position: absolute;
+    left: 0px;
+    top: 43.51px;
+    box-shadow: 15px 19px 26px 0px rgba(0, 0, 0, 0.1);
+    transform-origin: 0 0;
+    transform: rotate(-8.464deg) scale(1, 1);
+}
+
+.div3 {
+    color: #000000;
+    text-align: center;
+    font-family: "210Ssanai-Bold", sans-serif;
+    font-size: 56px;
+    line-height: 70px;
+    font-weight: 700;
+    position: absolute;
+    left: 22.57px;
+    top: 13.41px;
+    width: 251px;
+    height: 73.96px;
+}
+
+.star {
+    width: 59.95px;
+    height: 60px;
+    position: absolute;
+    right: 0%;
+    left: 88.56%;
+    width: 11.44%;
+    bottom: 38.34%;
+    top: 27.57%;
+    height: 34.1%;
+    overflow: visible;
+}
+
+.frame-235 {
+    background: linear-gradient(239.61deg,
+            rgba(254, 152, 0, 1) 0%,
+            rgba(255, 245, 0, 1) 100%);
+    border-radius: 30px;
+    padding: 36px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.25);
+}
+
+.frame-237 {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-236 {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-227 {
+    padding: 0px 10px 0px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.div4 {
+    color: #000000;
+    text-align: left;
+    font-family: "NotoSansCjkKr-Bold", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    position: relative;
+}
+
+.frame-225 {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+._46 {
+    color: #e4007f;
+    text-align: center;
+    font-family: "NotoSansCjkKr-Bold", sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    position: relative;
+}
+
+.div5 {
+    color: #e4007f;
+    text-align: center;
+    font-family: "NotoSansCjkKr-Bold", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    position: relative;
+    width: 96px;
+    height: 96px;
+}
+
+.frame-226 {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.div6 {
+    color: #0b288c;
+    text-align: center;
+    font-family: "NotoSansCjkKr-Bold", sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    position: relative;
+}
+
+.div7 {
+    color: #0b288c;
+    text-align: center;
+    font-family: "NotoSansCjkKr-Bold", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    position: relative;
+}
+
+.investor-3025716-2526914 {
+    flex-shrink: 0;
+    width: 224px;
+    height: 340px;
+    position: relative;
+}
+
+.frame-234 {
+    background: #ffffff;
+    border-radius: 0px 0px 30px 30px;
+    padding: 48px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.frame-232 {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.36);
+}
+
+.div8 {
+    color: #2f2f2f;
+    text-align: center;
+    font-family: "NotoSansCjkKr-Bold", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+}
+
+.div9 {
+    color: #ff0000;
+    text-align: center;
+    font-family: "NotoSansCjkKr-Bold", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+}
+
+.frame-2342 {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.36);
+}
+
+.frame-233 {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.36);
+}
+
+.frame-186 {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.div10 {
+    color: #ffffff;
+    text-align: center;
+    font-family: "NotoSansCjkKr-Regular", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.buttom {
+    background: #0b288c;
+    padding: 48px 10px 48px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.https-lottiefiles-com-animations-arrow-m-s-8-x-lr-u-9-ux {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+
+.frame-231 {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    height: 120px;
+    position: relative;
+}
+
+.div11 {
+    color: #ffffff;
+    text-align: left;
+    font-family: "NotoSansCjkKr-Bold", sans-serif;
+    font-size: 82px;
+    line-height: 112px;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
