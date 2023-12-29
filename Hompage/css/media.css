@@ -45,11 +45,17 @@
 	}
 	/* Offer Section */
 	section.offer{
-		padding:36px 48px;
+		padding:24px;
 	}
-	
-	.offer .offer-contents{
-		justify-content: space-between;
+	section.offer .offer-div img{
+		width:96%;
+		margin-left: 2%;
+	}
+
+
+
+	section.join-us-form{
+		padding:36px 48px;
 	}
 
 
@@ -79,11 +85,33 @@
 		margin-left:0%;
 	}
 	
-	section.offer,
-	section.about{
+	section.offer {
 		width:100%;
 		margin-left:0%;
 	}
+
+
+	.about .about-contents{
+		padding:0;
+
+	}
+
+	section.about .about-desc h3{
+		font-size:1.2rem;
+	}
+	section.about .about-desc p{
+		font-size: 0.8rem;
+	}
+
+
+
+	section.page-footer .footer-col-desc h3{
+		font-size:0.8rem;
+	}
+	section.page-footer .footer-col-desc span{
+		font-size:0.65rem;
+	}
+
 	
 
 
@@ -179,17 +207,33 @@
 	}
 	.home .main-navbar .nav-list{
 		position: fixed;
-		width: 100%;
+		width: 70%;
 		height: 100vh;
 		top: 0;
 		/*right: 0;*/
 		right: -100%;
 		display: flex;
+		opacity: 100%;
 		flex-direction: column;
 		align-items: center;
 		background-color: var(--dark-bg-clr);
 		transition: right 0.3s;
 		z-index: 100;
+	}
+	.home .main-navbar .nav-list li {
+		padding: 16px 0;
+		width:100%;
+		text-align: center;
+		
+	}
+	.home .main-navbar .nav-list li:hover{
+		background-color: rgba(255, 102, 0, 0.1);
+		color:#ff5300;
+		transition: 0.6s;
+	}.home .main-navbar .nav-list li:hover a {
+
+		color:#ff5300;
+		transition: 0.6s;
 	}
 	.home .main-navbar .nav-list.active{
 		right: 0;
@@ -225,8 +269,9 @@
 
 
 	
+	
 	.page-footer .footer-contents{
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
 
 }
@@ -250,6 +295,19 @@
 		grid-column-gap: 2%;
 	} */
 
+	.about .about-contents{
+		/* position: relative; */
+		display: grid;
+		grid-template-columns: 2fr;
+		grid-template-rows: auto;
+		grid-column-gap: 2%;
+		width:100%;
+		top: 0px;
+
+	}
+
+
+
 }
 
 @media(max-width: 568px){
@@ -268,14 +326,12 @@
 	
 	
 	/* Sections Heading */
-	section .section-header h1{
+	/* section .section-header h1{
 		font-size: 32px;
-	}
+	} */
 
 
-	section.offer{
-		padding:36px;
-	}
+
 }
 
 @media(max-width: 390px){

@@ -128,7 +128,7 @@ button.board-btn:hover{
 section .section-header{
 	max-width: 700px;
 	text-align: center;
-	padding-bottom: 48px;
+	padding-bottom: 24px;
 	margin: 0px auto;
 }
 section .section-header h3{
@@ -144,7 +144,8 @@ section .section-header h1{
 }
 section .section-header p{
 	color: var(--dark-text-clr);
-	line-height: 1.4;
+	font-size: 0.8rem;
+
 }
 .checkbox-s {
 	width:8px;
@@ -352,7 +353,7 @@ section.board{
 section.facilities{
 	width: 80%;
 	margin-left: 10%;
-	padding: 48px 2% 48px;
+	padding: 80px 2% 80px;
 	align-items: center;
 
     
@@ -1207,7 +1208,7 @@ details[open] summary:after {
 section.banner2{
 	width: 70%;
 	margin-left: 15%;
-	padding: 0px 8%;
+	padding: 00px 8%;
     
 }
 .banner2 .banner2-contents{
@@ -1225,7 +1226,7 @@ section.banner2{
 section.join-us-form{
 	width: 70%;
 	margin-left: 15%;
-	padding: 60px 8% 60px;
+	padding: 80px 8% 80px;
 
 	color: var(--light-heading-clr);
 }
@@ -1609,7 +1610,7 @@ section.offer h3{
 }
 
 section.offer p{
-	font-size: 1.2rem;
+	font-size: 0.8em;
 	color: var(--light-secondary-heading-clr);
 	line-height: 1.4;
 	text-align: center;
@@ -1629,7 +1630,7 @@ section.offer p{
 section.about{
 	width: 100%;
 	/* margin-left:10%; */
-	padding: 48px 48px;
+	padding: 80px 48px;
 	background-color: var(--background-clr);
     
 }
@@ -1673,7 +1674,7 @@ section.about .about-desc p{
 }
 .about-item .about-desc{
     width:100%;
-	margin-top: 36px;
+
 	text-align: center;
 }
 .about-item .about-desc img{
@@ -1696,7 +1697,7 @@ section.about .about-desc p{
 	width:236px;
 	display:inline-block;
 	right:16px; /* 창에서 오른쪽 길이 */
-	top:14%; /* 창에서 위에서 부터의 높이 */
+	top:15%; /* 창에서 위에서 부터의 높이 */
 	margin:0;
 	z-index: 990;
 }
@@ -2214,15 +2215,15 @@ section.about .about-desc p{
 /*   === Footer Section Styling Starts ===   */
 section.page-footer{
 	width: 100%;
-	padding: 70px 8% 50px;
+	padding: 48px 6% 48px;
 	background-color: var(--dark-bg-clr);
 	color: var(--light-heading-clr);
 }
 .page-footer .footer-contents{
 	width: 100%;
 	display: grid;
-	grid-template-columns: 3fr 1fr;
-	grid-gap: 40px;
+	grid-template-columns: 90% 10%;
+	grid-gap: 20px;
 }
 .footer-contents .footer-col{
 	display: flex;
@@ -2236,7 +2237,7 @@ section.page-footer{
 }
 
 
-.footer-contents .footer-col .footer-col-desc h5{
+.footer-contents .footer-col .footer-col-desc h3{
 		color: #c1c1c1;
 		font-size: 1rem;
 		font-weight: 400;
@@ -2246,6 +2247,7 @@ section.page-footer{
 
 .footer-col-1 .footer-col-desc span{
 	color: var(--light-text-clr);
+	font-size: 0.8rem;
 	margin-bottom: 3px;
 	display: inline-block;
 }
@@ -2253,26 +2255,6 @@ section.page-footer{
 	margin-top: 15px;
 }
 
-
-.footer-col-3 {
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-	align-items: right;
-	justify-content: flex-end;
-	flex-wrap: wrap;
-
-	position: relative;
-}
-
-.footer-col-3 .title {
-	color: #ffffff;
-	text-align: right;
-	font-family: "Inter-Regular", sans-serif;
-	font-size: 12px;
-	font-weight: 400;
-	position: relative;
-}
 
 .footer-col-3 .injeungmark-1 {
 	flex-shrink: 0;
@@ -2282,9 +2264,6 @@ section.page-footer{
 	position: relative;
 }
 
-
-
-
 .copy-rights{
 	width: 100%;
 	padding: 30px 8%;
@@ -2293,6 +2272,7 @@ section.page-footer{
 }
 .copy-rights p{
 	color: var(--light-text-clr);
+	font-size: 0.8rem;
 	text-align: center;
 }
 /* .copy-rights p b{
