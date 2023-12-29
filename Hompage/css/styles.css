@@ -1641,7 +1641,7 @@ section.about .about-desc h3{
 	font-size: 1.5rem;
 	font-weight: 700;
 	text-align: left;
-	margin: 16px 16px 16px 0;
+	margin: 8px 8px 0px 0;
 }
 
 
@@ -1659,22 +1659,19 @@ section.about .about-desc p{
 	/* position: relative; */
 	display: grid;
 	grid-template-columns: 2fr 1fr 1fr 1fr;
-	grid-column-gap: 2%;
+	gap: 3%;
 	top: 0px;
 	padding: 0 10% 0;
 }
 
 .about-contents .about-item{
-	/* padding: 16px 16px 16px; */
 	border-radius: 5px;
-	/* box-shadow: 0px 5px 10px rgba(0,0,0,0.1); */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 .about-item .about-desc{
     width:100%;
-
 	text-align: center;
 }
 .about-item .about-desc img{
@@ -1684,9 +1681,7 @@ section.about .about-desc p{
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.1)
 }
 
-/* .about-documents .about-document-1{
-	margin-right: 20px;
-} */
+
 /*   === About Section Styling Ends ===   */
 
 
@@ -2222,7 +2217,7 @@ section.page-footer{
 .page-footer .footer-contents{
 	width: 100%;
 	display: grid;
-	grid-template-columns: 90% 10%;
+	grid-template-columns: 9fr 1fr;
 	grid-gap: 20px;
 }
 .footer-contents .footer-col{
@@ -2242,7 +2237,6 @@ section.page-footer{
 		font-size: 1rem;
 		font-weight: 400;
 		text-align: left;
-
 }
 
 .footer-col-1 .footer-col-desc span{
@@ -2251,6 +2245,8 @@ section.page-footer{
 	margin-bottom: 3px;
 	display: inline-block;
 }
+
+
 .footer-col-1 .footer-col-desc span:nth-of-type(1){
 	margin-top: 15px;
 }

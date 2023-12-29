@@ -55,7 +55,7 @@
 
 
 	section.join-us-form{
-		padding:36px 48px;
+		padding:80px 48px;
 	}
 
 
@@ -268,15 +268,18 @@
 	}
 
 
-	
-	
-	.page-footer .footer-contents{
-		grid-template-columns: 1fr 1fr;
-	}
-
 }
 
 @media(max-width: 668px){
+
+
+	section.facilities
+	{
+		width:100%;
+		margin-left:0%;
+		padding: 48px 24px;
+	}
+
 
     #floatdiv-bottom{
         display: none;
@@ -285,6 +288,9 @@
         display: block;
     }
 
+	section.join-us-form{
+		padding:48px 24px;
+	}
 
 	/* Offer Section */
 	/* section.offer{
@@ -295,46 +301,87 @@
 		grid-column-gap: 2%;
 	} */
 
+	
+
 	.about .about-contents{
-		/* position: relative; */
-		display: grid;
-		grid-template-columns: 2fr;
-		grid-template-rows: auto;
-		grid-column-gap: 2%;
-		width:100%;
-		top: 0px;
-
+		grid-template-columns: 2fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		
 	}
-
-
-
+	section.about .about-desc h3{
+		font-size: 1.5rem;
+	}
+	section.about .about-desc p{
+		font-size: 1rem;
+	}
 }
+
+
+
+
 
 @media(max-width: 568px){
 	/* Home Section */
+
+
 	.banner .banner-contents h2{
-		font-size: 20px;
+		font-size: 1.2rem
+
 	}
 	.banner .banner-contents h1{
-		font-size: 40px;
+		font-size: 2.8rem;
+		margin: 12px 0;
+	
 	}
+	.banner .banner-contents p{
+		font-size: 0.9rem;
+	}
+
 	/* Facilities Section */
 	.facilities .facilities-contents{
 		grid-template-columns: 1fr;
 		grid-gap: 25px 0px;
 	}
 	
-	
-	/* Sections Heading */
-	/* section .section-header h1{
-		font-size: 32px;
-	} */
+
+	section.about{
+		padding: 60px 24px;
+		
+	}
+	section.about .about-desc h3{
+		font-size: 1.3rem;
+	}
+	section.about .about-desc p{
+		font-size: .9rem;
+	}
 
 
+
+	section.page-footer .footer-col-desc h3{
+		font-size:0.65rem;
+	}
+	section.page-footer .footer-col-desc span{
+		font-size:0.55rem;
+	}
 
 }
 
 @media(max-width: 390px){
+
+	
+
+	.banner .banner-contents h2{
+		font-size: 1rem
+
+	}
+	.banner .banner-contents h1{
+		font-size: 2.5rem;
+		margin: 8px 0;
+	
+	}
+	.banner .banner-contents p{
+		font-size: 0.8rem;
+	}
 
 
 	/* Offer Section */
@@ -353,19 +400,15 @@
 	}
 	/* About Section */
 	
-	#about .about-contents{
-		padding:0;
-	}
-	#about .about-contents{
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 16px 16px;
-	}
-	#about .about-contents h3 {
+
+	/* #about .about-contents h3 {
 		font-size: 1rem;
 	}
 	#about .about-contents p {
 		font-size: 0.8rem;
-	}
+	} */
+
+
 }
 
 
