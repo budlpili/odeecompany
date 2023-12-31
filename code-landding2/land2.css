@@ -36,6 +36,7 @@ th, td{
 
 .landding-div-wrab .gif {
     width: 85%;
+    padding:24px 0;
 }
 
 
@@ -85,7 +86,7 @@ div.back{
     color: #ffffff;
     text-align: center;
     font-family: "NotoSansCjkKr-Bold", sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
     position: relative;
 }
