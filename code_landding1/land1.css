@@ -10,8 +10,7 @@ body{
 	min-height: 100vh;
 	margin: 0px auto;
 	/* background-color: var(--background-clr); */
-	background-color: #ff2f2f;
-    
+
 }
 th, td{
     text-align: center;

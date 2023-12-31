@@ -1,0 +1,93 @@
+
+body{
+	width: 100%;
+	min-height: 100vh;
+
+}
+.website-wrapper{
+	width: 100%;
+	max-width: 100%;
+	min-height: 100vh;
+	margin: 0px auto;
+	/* background-color: var(--background-clr); */
+
+}
+th, td{
+    text-align: center;
+    width: auto;
+
+}
+
+.landding-div-wrab {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.landding-div-wrab .size {
+    position: relative;
+    margin-top: -3px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.landding-div-wrab .gif {
+    width: 85%;
+}
+
+
+a {
+    text-decoration: none;
+}
+div.back{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 36px 0px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.btn-apply {
+    background: #c519fa;
+    border-radius: 10px;
+    padding:24px 240px;
+    margin: 36px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.buttom {
+    color: #ffffff;
+    text-align: center;
+    font-family: "NotoSansCjkKr-Bold", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+}
+
+
