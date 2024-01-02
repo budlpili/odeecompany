@@ -1226,7 +1226,7 @@ section.banner2{
 section.join-us-form{
 	width: 70%;
 	margin-left: 15%;
-	padding: 80px 8% 80px;
+	padding: 36px 8% 80px;
 
 	color: var(--light-heading-clr);
 }
@@ -1372,7 +1372,6 @@ section.join-us-form{
 	--moz-appearance: none;
 	/* appearance: none; */
 }
-
 
 .form-sub select.time{
 	padding: 6px 6px;
@@ -1888,7 +1887,7 @@ section.about .about-desc p{
 }
 
 .container-input input::placeholder {
-	color:#ccc;
+	color:#999;
 }
 
 
@@ -1904,6 +1903,22 @@ section.about .about-desc p{
 	position: relative;
 	overflow: hidden;
 }
+
+.container-middle .item select.hope{
+	padding: 6px 6px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px;
+	font-weight: 400;
+    color:#999;
+    font-size: 0.7rem;
+	background: rgba(196, 196, 196, 0.2);
+	border-radius: none;
+	--webkit-appearance:none;
+	--moz-appearance: none;
+	/* appearance: none; */
+}
+
 
 .agree {
 	padding: 6px 0px 6px 0px;
@@ -1991,7 +2006,7 @@ section.about .about-desc p{
 	position:fixed; 
 	width:100%;
 	display:inline-block;
-	padding: 16px 60px 0 60px;
+	padding: 16px 60px 0 48px;
 	bottom:0; /* 창에서 위에서 부터의 높이 */
 	margin:0;
 	align-items: center;
@@ -2021,8 +2036,7 @@ section.about .about-desc p{
 	align-self: stretch;
 	flex-shrink: 0;
 	color: var(--light-secondary-heading-clr);
-	font-family: "Roboto-Medium", sans-serif;
-	font-weight: 600;
+	font-weight: 400;
 	position: relative;
 }
 
@@ -2041,7 +2055,7 @@ section.about .about-desc p{
 #floatdiv-bottom .input-total {
 	display: flex;
 	flex-direction: row;
-	gap: 24px;
+	gap: 16px;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -2053,7 +2067,7 @@ section.about .about-desc p{
 #floatdiv-bottom .input-name {
 	display: flex;
 	flex-direction: row;
-	gap: 10px;
+	gap: 6px;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -2086,25 +2100,47 @@ section.about .about-desc p{
 	position: relative;
 	overflow: hidden;
 }
+#floatdiv-bottom .input-name input{
+	width:70px;
+}
+
 #floatdiv-bottom .input-phone input{
-	width:100px;
+	width:90px;
 }
 
 #floatdiv-bottom .input-phone {
 	display: flex;
 	flex-direction: row;
-	gap: 10px;
+	gap: 6px;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	flex-shrink: 0;
 	position: relative;
 }
+#floatdiv-bottom .input-phone .hope {
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: 2px;
+	border-style: solid;
+	border-color: transparent;
+	border-width: 1px;
+	flex-shrink: 0;
+	width: 110px;
+	height: 28px;
+	padding: 0 6px 0;
+	font-size: 0.7rem;
+	color:#666;
+	position: relative;
+	overflow: hidden;
+	--webkit-appearance: none;
+	--moz-appearance: none;
+	/* appearance: none; */
+}
 
 #floatdiv-bottom .btn-side {
 	background: #ff5300;
 	border-radius: 6px;
-	padding: 10px 16px 10px 16px;
+	padding: 8px;
 	display: flex;
 	flex-direction: row;
 	gap: 10px;
@@ -2122,14 +2158,14 @@ section.about .about-desc p{
 	line-height: 20px;
 	font-weight: 700;
 	position: relative;
-	width: 133px;
+	width: 120px;
 }
 
 #floatdiv-bottom .agree {
 	padding: 6px 0px 6px 0px;
 	display: flex;
 	flex-direction: row;
-	gap: 10px;
+	gap: 6px;
 	align-items: center;
 	justify-content: center;
 	align-self: stretch;
